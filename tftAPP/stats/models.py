@@ -10,10 +10,7 @@ class Augment(models.Model):
     games_three_two = models.IntegerField(default=0)
     games_four_two = models.IntegerField(default=0)
 
-    avg_total = models.FloatField(default=0.0)
-    avg_two_one = models.FloatField(default=0.0)
-    avg_three_two = models.FloatField(default=0.0)
-    avg_four_two = models.FloatField(default=0.0)
-
-class Data(models.Model):
-    augments = models.ManyToManyField(Augment)
+    avg_total = models.FloatField(default=None, null=True)
+    avg_two_one = models.FloatField(default=None, null=True)
+    avg_three_two = models.FloatField(default=None, null=True)
+    avg_four_two = models.FloatField(default=None, null=True)

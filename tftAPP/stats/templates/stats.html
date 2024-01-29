@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home Page</title>
+</head>
+<body>
+    <table>
+        <tr>
+          <th>Augment</th>
+          <th>2-1 Avg</th>
+          <th>2-1 Games</th>
+          <th>3-2 Avg</th>
+          <th>3-2 Games</th>
+          <th>4-2 Avg</th>
+          <th>4-2 Games</th>
+          <th>Avg</th>
+          <th>Games</th>
+        </tr>
+        {% for aug in all_augs %}
+        <tr>
+            <td>{{aug.name}}</td>
+            {% if aug.avg_two_one is None %}
+                <td>-</td>
+                <td>-</td>
+            {% else %}
+                <td>{{aug.avg_two_one}}</td>
+                <td>{{aug.games_two_one}}</td>
+            {% endif %}
+            {% if aug.avg_three_two is None %}
+                <td>-</td>
+                <td>-</td>
+            {% else %}
+                <td>{{aug.avg_three_two}}</td>
+                <td>{{aug.games_three_two}}</td>
+            {% endif %}
+            {% if aug.avg_four_two is None %}
+                <td>-</td>
+                <td>-</td>
+            {% else %}
+                <td>{{aug.avg_four_two}}</td>
+                <td>{{aug.games_four_two}}</td>
+            {% endif %}
+            {% if aug.avg_total is None %}
+                <td>-</td>
+                <td>-</td>
+            {% else %}
+                <td>{{aug.avg_total}}</td>
+                <td>{{aug.games_total}}</td>
+            {% endif %}
+        </tr>
+        {% endfor %}
+     </table>
+</body>
+</html>
