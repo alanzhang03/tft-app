@@ -135,4 +135,9 @@ CELERY_BEAT_SCHEDULE = { # scheduler configuration
         'task': 'stats.tasks.task_one', # name of task with path
         'schedule': crontab(hour='*', minute='0'), # crontab() runs the tasks every minute
     }
+    #,
+    # 'task_two_schedule' : {  # whatever the name you want 
+    #     'task': 'stats.tasks.task_two', # name of task with path
+    #     'schedule': 1.0, # crontab() runs the tasks every minute
+    # }
 }

@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import time
 from django.db import models
+import logging
 
 @app.task
 def task_one():
@@ -31,7 +32,6 @@ def task_one():
 
 
     ## get a list of all match ids within the last hour
-    import time
     recent_match_ids = []
     start_time = int(time.time()) - 3600
 
@@ -44,8 +44,9 @@ def task_one():
 
         ## delete when have production key
         if count % 100 == 0:
-            time.sleep(120)
             print("sleeping 120s")
+            time.sleep(120)
+            
         count += 1
 
     ## add data to database
@@ -78,8 +79,9 @@ def task_one():
     for match_id in recent_match_ids:
 
         if count % 100 == 0:
-            time.sleep(120)
             print("sleeping 120s")
+            time.sleep(120)
+            
 
         api_url = 'https://americas.api.riotgames.com/tft/match/v1/matches/'+ match_id + '?api_key=' + api_key
         r = requests.get(api_url).json()
@@ -229,3 +231,8 @@ def task_one():
         #               avg_four_two = 0.0 if pd.isna(new_avg_four_two) else new_avg_four_two)
         # aug.save()
     return "success"
+
+# @app.task
+# def task_two():
+#     print('working as expected')
+#     return "success"
