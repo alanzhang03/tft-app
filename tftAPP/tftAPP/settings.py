@@ -133,6 +133,6 @@ from datetime import datetime
 CELERY_BEAT_SCHEDULE = { # scheduler configuration 
     'task_one_schedule' : {  # whatever the name you want 
         'task': 'stats.tasks.task_one', # name of task with path
-        'schedule': crontab(minute='30,31,32'), # crontab() runs the tasks every minute
+        'schedule': crontab(hour='*', minute='0'), # crontab() runs the tasks every minute
     }
 }
