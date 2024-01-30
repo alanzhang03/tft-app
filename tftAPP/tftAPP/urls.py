@@ -20,7 +20,9 @@ from django.urls import include, path
 from stats import views as stats_views
 from home import views as home_views
 from comps import views as comps_views
-from TeamBuilder import views as TeamBuilder_views
+from players import views as players_views
+from teamBuilder import views as teamBuilder_views
+from tools import views as tools_views
 
 
 urlpatterns = [
@@ -28,6 +30,8 @@ urlpatterns = [
     path("", home_views.home_view),
     path("comps/", comps_views.comps_view),
     path("stats/", stats_views.stats_view),
-    path("TeamBuilder/", TeamBuilder_views.TeamBuilder_views),
+    path("players/", players_views.players_view),
+    path("tools/", tools_views.tools_view),
+    path("TeamBuilder/", teamBuilder_views.teamBuilder_view),
     
 ]

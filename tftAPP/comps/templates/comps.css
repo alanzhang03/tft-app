@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- <link rel="stylesheet" href="stats.css"> -->
-    <title>LolBot tracker</title>
-</head>
-
-<style>
 html, body {
     scroll-behavior: smooth;
     font-family: "Cursive";
@@ -65,23 +57,3 @@ Players{
 Team Builder{
 
 } */
-
-
-</style>
-
-<header> 
-    <div class="topnav">
-        <a class ="active"href="../">Home</a>
-        <a href="/comps/">Comps</a>
-        <a href="/stats/">Stats</a>
-        <a href="/tools/">Tools</a>
-        <a href="/players/">Players</a>
-        <a href="/TeamBuilder/">Team Builder</a>
-    </div>            
-</header>
-
-
-<body>
-    <br><br><br><center><h1>This is Comps page</h1></center>
-</body>
-</html>

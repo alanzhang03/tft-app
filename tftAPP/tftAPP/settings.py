@@ -34,6 +34,10 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'stats',
     'home',
+    'comps',
+    'players',
+    'tools',
+    'teamBuilder',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

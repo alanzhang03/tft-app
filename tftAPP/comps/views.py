@@ -1,7 +1,6 @@
-from django.http import HttpResponse
 from django.shortcuts import render
-
+from django.http import HttpResponse
+# Create your views here.
 
 def comps_view(request):
-    # return HttpResponse("HI TESTING!")
-    return render(request,'comps.html')
+    return render(request, 'comps.html')
