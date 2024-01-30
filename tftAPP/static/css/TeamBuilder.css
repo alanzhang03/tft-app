@@ -3,7 +3,7 @@ html, body {
     font-family: "Cursive";
     padding: 0;
     margin: 0;
-
+    /* background-color: blue; */
 }
 
 .topnav {
@@ -32,3 +32,4 @@ html, body {
 .topnav a:hover, .topnav a:focus {
     color: lavender;
 }
+
