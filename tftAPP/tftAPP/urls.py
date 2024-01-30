@@ -19,10 +19,15 @@ from django.contrib import admin
 from django.urls import include, path
 from stats import views as stats_views
 from home import views as home_views
+from comps import views as comps_views
+from TeamBuilder import views as TeamBuilder_views
+
 
 urlpatterns = [
-    path("stats/", stats_views.stats_view),
     path("admin/", admin.site.urls),
     path("", home_views.home_view),
+    path("comps/", comps_views.comps_view),
+    path("stats/", stats_views.stats_view),
+    path("TeamBuilder/", TeamBuilder_views.TeamBuilder_views),
     
 ]
