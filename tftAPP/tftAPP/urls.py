@@ -24,4 +24,5 @@ urlpatterns = [
     path("stats/", stats_views.stats_view),
     path("admin/", admin.site.urls),
     path("", home_views.home_view),
+    
 ]
