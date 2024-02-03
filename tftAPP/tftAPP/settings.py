@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'django_celery_results',
 ]
 
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -123,7 +124,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
@@ -147,3 +147,8 @@ CELERY_BEAT_SCHEDULE = { # scheduler configuration
     #     'schedule': 1.0, # crontab() runs the tasks every minute
     # }
 }
+
+
+# Configure Django App for Heroku.
+import django_on_heroku
+django_on_heroku.settings(locals())

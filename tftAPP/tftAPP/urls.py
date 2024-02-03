@@ -33,5 +33,7 @@ urlpatterns = [
     path("players/", players_views.players_view),
     path("tools/", tools_views.tools_view),
     path("TeamBuilder/", teamBuilder_views.teamBuilder_view),
+    path('stats//riot.txt', stats_views.download_file),
     
 ]
+    
