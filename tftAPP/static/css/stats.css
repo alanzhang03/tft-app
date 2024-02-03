@@ -1,0 +1,82 @@
+html, body {
+    scroll-behavior: smooth;
+    font-family: "Cursive";
+    padding: 0;
+    margin: 0;
+    
+
+}
+
+.topnav {
+    background-color: cornflowerblue;
+    overflow: hidden;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    box-sizing: border-box;
+}
+
+.topnav a {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.topnav a:hover, .topnav a:focus {
+    color: lavender;
+}
+
+.centered-container {
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2); 
+    border-radius: 4px; 
+    overflow: hidden; 
+    margin: auto; 
+    padding: 20px; 
+    background-color: white; 
+    max-width: 1000px; 
+  }
+  
+#searchInput {
+    margin-bottom: 20px; 
+
+}
+  
+table {
+    margin: 0 auto;
+    width:100%;
+    border-collapse: collapse;
+
+}
+  
+th, td {
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: lightgray;
+
+}
+
+th{
+    background-color: black;
+    color: white;
+}
+
+#searchInput {
+    padding: 10px;
+    margin-bottom: 20px; 
+    border: 1px solid #ddd;
+    border-radius: 4px; 
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.1); 
+}
+
+th:hover{
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
