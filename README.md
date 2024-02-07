@@ -1,5 +1,5 @@
 # tft-app
- A teamfight tactics related website created using Django, Celery, and MySQL
+ A teamfight tactics related website created using Django and Celery
 
 # Setup:
  Install the required dependencies by running the command 'pip install -r requirements.txt'
