@@ -3,21 +3,22 @@ html, body {
     font-family: "Cursive";
     padding: 0;
     margin: 0;
-
 }
-
+body {
+    background-color: #361164;
+}
 .topnav {
-    background-color: cornflowerblue;
+    background-color: #2A0C4E;
     overflow: hidden;
     height: 60px;
     width: 100%;
     position: fixed;
     top: 0;
-    z-index: 1000;
     display: flex;
     justify-content: center; 
     align-items: center; 
     box-sizing: border-box;
+    transition: .15s;
 }
 
 .topnav a {
@@ -27,12 +28,13 @@ html, body {
     text-decoration: none;
     font-size: 25px;
     font-weight: bold;
+    border-radius: 10px;
+    transition: .3s;
+    margin: 1px;
 }
 
 .topnav a:hover, .topnav a:focus {
-    color: lavender;
-}
+    color: #2A0C4E;
+    background-color: lightgray;
 
-TeamBuilder{
-    background-color: blue;
 }
